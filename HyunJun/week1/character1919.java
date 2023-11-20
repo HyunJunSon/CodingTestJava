@@ -1,4 +1,4 @@
-package HyunJun.character;
+package HyunJun.character.week1;
 
 import java.util.Scanner;
 
