@@ -1,3 +1,5 @@
+package baekjoon_13223;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -34,7 +36,7 @@ public class Main {
         int secondDiff = calculateSecond(endTime) - calculateSecond(beginTime);
 
         if(secondDiff < 0) {
-            secondDiff += 86400;
+            secondDiff += 24 * 60 * 60;
         }
 
         return secondDiff;
