@@ -6,16 +6,16 @@ import java.util.StringTokenizer;
 
 public class Main {
 	public static int findSameSum(int arrayLength, int[] array, int sumResult) {
-		int i = 0;
 		int N = arrayLength - 1;
 		int count = 0;
 
 		Arrays.sort(array);
-		while (i < N) {
+		for (int i = 0; i < N ;) {
 
 			if (array[N] + array[i] == sumResult) {
 				count++;
-			} else if (array[N] + array[i] > sumResult) {
+			}
+			if (array[N] + array[i] < sumResult) {
 				i++;
 			} else {
 				N--;
